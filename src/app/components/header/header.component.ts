@@ -1,0 +1,17 @@
+import {Component, computed, inject, signal} from '@angular/core';
+import {PrimaryButtonComponent} from '../primary-button/primary-button.component';
+import {CartService} from '../../services/cart.service';
+import {RouterLink} from '@angular/router';
+@Component({
+  selector: 'app-header',
+  imports: [PrimaryButtonComponent, RouterLink],
+  templateUrl: './header.component.html',
+  styleUrl: './header.component.css'
+})
+export class HeaderComponent {
+  title = signal('My Ecommerce App')
+  cartService = inject(CartService)
+    cartLabel = computed(() => `Cart (${this.cartService.cart().length})`);
+
+
+}
