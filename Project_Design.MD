@@ -86,7 +86,6 @@ The application prioritizes component reusability to promote maintainability and
 
 Potential areas for future development and enhancements include:
 
-*   Integrating a comprehensive component library like Angular Material or PrimeNG [107-111].
 *   Implementing user authentication and authorization [112].
 *   Adding detailed product pages with more information [112].
 *   Developing a complete checkout process with payment integration [112].
